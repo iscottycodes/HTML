@@ -1,0 +1,333 @@
+/* 
+ * SpaceX Demo Website CSS Styles
+ * Author: Student Developer
+ * A learning project demonstrating HTML, CSS, and Bootstrap
+ */
+
+/* Base styles and resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Header section with background image */
+.main-header {
+    background-image: url('https://sxcontent9668.azureedge.us/cms-assets/assets/Eva_Suit_Desktop_alternate_1cf9bae18e.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+/* Overlay for better text visibility */
+.main-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+/* Hero section content */
+.hero-section {
+    position: relative;
+    z-index: 2;
+    padding-top: 80px;
+}
+
+/* Hero title styling */
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    margin-bottom: 1rem;
+}
+
+/* Hero subtitle */
+.hero-subtitle {
+    font-size: 1.5rem;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+    margin-bottom: 2rem;
+}
+
+/* Custom button styling */
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+}
+
+/* Section spacing */
+section {
+    padding: 80px 0;
+}
+
+/* Section titles */
+.section-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+/* About section content box */
+.content-box {
+    background-color: #f8f9fa;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #007bff;
+}
+
+/* Bio section within content box */
+.bio-section {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 5px;
+    margin-top: 1.5rem;
+    border: 1px solid #dee2e6;
+}
+
+/* Bio title */
+.bio-title {
+    color: #007bff;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+/* Profile image styling */
+.profile-img {
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.profile-img:hover {
+    transform: scale(1.05);
+}
+
+/* Image caption */
+.img-caption {
+    font-style: italic;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Features section background */
+.bg-light {
+    background-color: #f8f9fa !important;
+}
+
+/* Feature cards */
+.feature-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    height: 100%;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Feature icons */
+.feature-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.feature-card h4 {
+    color: #007bff;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.feature-card p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Table styling */
+.table {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.table-dark th {
+    background-color: #343a40;
+    border-color: #343a40;
+    color: white;
+}
+
+.table-hover tbody tr:hover {
+    background-color: rgba(0, 123, 255, 0.1);
+}
+
+/* Contact section with background */
+.contact-section {
+    background-image: url('https://sxcontent9668.azureedge.us/cms-assets/assets/Eva_Suit_Desktop_alternate_1cf9bae18e.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+
+/* Contact section overlay */
+.contact-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+/* Contact form wrapper */
+.contact-form-wrapper {
+    position: relative;
+    z-index: 2;
+}
+
+/* Contact form styling */
+.contact-form {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Form inputs */
+.form-control {
+    border: 2px solid #dee2e6;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.25rem rgba(0, 123, 255, 0.25);
+    outline: none;
+}
+
+/* Form labels */
+.form-label {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+/* Footer styling */
+footer {
+    margin-top: 0;
+}
+
+/* Responsive design for mobile devices */
+@media (max-width: 768px) {
+    /* Adjust hero title for mobile */
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    /* Adjust hero subtitle for mobile */
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+    
+    /* Reduce section padding on mobile */
+    section {
+        padding: 60px 0;
+    }
+    
+    /* Stack content vertically on mobile */
+    .about-content {
+        margin-bottom: 2rem;
+    }
+    
+    /* Adjust profile image size for mobile */
+    .profile-img {
+        max-width: 200px;
+    }
+    
+    /* Stack feature cards vertically */
+    .feature-card {
+        margin-bottom: 1.5rem;
+    }
+}
+
+/* Extra small mobile devices */
+@media (max-width: 576px) {
+    /* Further reduce hero title */
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    /* Adjust content box padding */
+    .content-box {
+        padding: 1.5rem;
+    }
+    
+    /* Adjust contact form padding */
+    .contact-form {
+        padding: 1.5rem;
+    }
+    
+    /* Hide table on very small screens */
+    .table-responsive {
+        font-size: 0.85rem;
+    }
+}
+
+/* Animation keyframes for subtle effects */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply fade-in animation to feature cards */
+.feature-card {
+    animation: fadeInUp 0.6s ease-out;
+}
