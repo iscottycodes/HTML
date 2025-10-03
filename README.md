@@ -1,10 +1,9 @@
 # CBC College HTML Assignment - Scott Dee
 
-<img src="website-screenshot.png" alt="Screenshot of SpaceX Demo Website" width="800">
+![Screenshot of CBC College Assignment by Scott Dee](images/website-screenshot.png)
 
 ## Assignment Description
 
-ABBREVIATED DESCRIPTION
 Hi! I'm Scott Dee, a CBC College student in the Web Development program. This is my HTML/CSS assignment for class. I picked a SpaceX theme because I think rockets are cool. This shows what I learned about HTML, CSS, and Bootstrap so far.
 
 The website has a few main parts:
