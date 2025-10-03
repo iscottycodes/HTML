@@ -1,24 +1,24 @@
 /* 
- * SpaceX Demo Website CSS Styles
- * Author: Student Developer
- * A learning project demonstrating HTML, CSS, and Bootstrap
+ * CSS styles for my CBC College assignment
+ * Student: Scott Dee
+ * Class: Web Development
  */
 
-/* Base styles and resets */
+/* Reset some browser defaults */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body styling */
+/* Basic font and styling */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: #333;
 }
 
-/* Header section with background image */
+/* Big header with space background */
 .main-header {
     background-image: url('https://sxcontent9668.azureedge.us/cms-assets/assets/Eva_Suit_Desktop_alternate_1cf9bae18e.jpg');
     background-size: cover;
@@ -30,7 +30,7 @@ body {
     align-items: center;
 }
 
-/* Overlay for better text visibility */
+/* Dark overlay so text shows up better */
 .main-header::before {
     content: '';
     position: absolute;
@@ -42,7 +42,7 @@ body {
     z-index: 1;
 }
 
-/* Hero section content */
+/* Main title area */
 .hero-section {
     position: relative;
     z-index: 2;

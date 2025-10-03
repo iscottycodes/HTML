@@ -1,140 +1,124 @@
-# Project Structure
+# My CBC College Assignment Structure
 
-This document outlines the file structure and organization of the SpaceX Demo Website HTML project.
+Hi, I'm Scott Dee from CBC College. Here's how I organized my HTML/CSS assignment files.
 
-```
-spacex-html-project/
-├── README.md                 # Main project documentation
-├── CONTRIBUTING.md           # Contribution guidelines
-├── LICENSE                   # MIT License file
-├── .gitignore               # Git ignore rules
-├── project-structure.md     # This file - project organization
-├── index.html               # Main HTML file
-├── styles.css               # Custom CSS styles
-└── images/                  # Images directory
-    └── README.txt           # Images folder documentation
-```
-
-## File Descriptions
-
-### Core Files
-- **`index.html`** - Main webpage containing all HTML structure, navigation, content sections, and JavaScript functionality
-- **`styles.css`** - Custom CSS featuring responsive design, animations, Bootstrap customizations, and mobile optimization
-
-### Documentation Files
-- **`README.md`** - Comprehensive project documentation including setup, usage, features, and contribution guidelines
-- **`CONTRIBUTING.md`** - Detailed guidelines for contributors including code style, commit formats, and pull request process
-- **`LICENSE`** - MIT License providing open-source usage permissions
-- **`project-structure.md`** - This file explaining project organization and file purposes
-
-### Configuration Files
-- **`.gitignore`** - Specifies files and directories to ignore in Git version control
-- **`images/README.txt`** - Documentation for images folder usage and external image source information
-
-## Directory Organization
-
-### `/images/`
-- **Purpose:** Directory for local image files (currently uses external URLs)
-- **Usage:** Replace external image URLs with uploaded local files
-- **Formats:** .jpg, .png, .svg supported
-- **Documentation:** Contains README.txt with usage instructions
-
-### External Dependencies
-- **Bootstrap 5:** Loaded via CDN from unpkg.js
-- **Background Images:** SpaceX Eva Suit image from Azure CDN
-- **Profile Image:** SpaceX Mechazilla image from shop.spacex.com
-- **No local dependencies:** All frameworks loaded via CDN
-
-## HTML Structure Overview
+## What Files Are Here
 
 ```
-<!DOCTYPE html>
+my-space-website/
+├── README.md          # This file explains the project
+├── index.html         # The main webpage
+├── styles.css         # All my CSS styling
+├── images/           # Where local images would go
+└── other files...    # License, contributing guide, etc.
+```
+
+## What Each File Does
+
+### The Important Ones:
+- **`index.html`** - This is the main file with all the HTML code and content
+- **`styles.css`** - This has all my custom CSS styling 
+- **`images/`** - Empty folder for local images (I used links to internet images)
+
+### Other Files:
+- **`README.md`** - Project description and instructions
+- **`LICENSE`** - MIT license (this lets people use my code)
+- **`CONTRIBUTING.md`** - How others could help improve my code
+- **`.gitignore`** - Tells Git to ignore certain files (I mostly copied this from examples)
+
+## How I Built the HTML Structure
+
+My page has these main sections:
+
+```
 <html>
 <head>
-    <!-- Meta tags, title, Bootstrap CDN, custom CSS -->
+    <!-- Links to Bootstrap and my CSS file -->
 </head>
 <body>
     <header>
         <!-- Navigation bar -->
-        <!-- Hero section with background image -->
+        <!-- Hero section with big title -->
     </header>
     
     <section id="about">
-        <!-- About us content with profile image -->
+        <!-- About information -->
+        <!-- Profile image -->
     </section>
     
     <section id="features">
-        <!-- Feature cards and mission data table -->
+        <!-- Three feature cards -->
+        <!-- Table with SpaceX missions -->
     </section>
     
     <section id="contact">
-        <!-- Contact form with background image -->
+        <!-- Contact form -->
     </section>
     
     <footer>
-        <!-- Footer information -->
+        <!-- Simple footer -->
     </footer>
-    
-    <!-- Bootstrap JS and custom JavaScript -->
 </body>
 </html>
 ```
 
-## CSS Organization
+## My CSS Organization
 
-### Style Sections
-1. **Base Styles** - Reset, typography, general layout
-2. **Header Styles** - Hero section, navigation, background images
-3. **About Section** - Content boxes, bio sections, profile images
-4. **Features Section** - Feature cards, table styling, grid layouts
-5. **Contact Section** - Form styling, background overlays, validation
-6. **Footer Styles** - Footer layout and typography
-7. **Responsive Design** - Mobile breakpoints and adaptive layouts
+I tried to organize my CSS by sections:
 
-### Responsive Breakpoints
-- **Desktop:** 1200px and above
-- **Tablet:** 768px - 1199px
-- **Mobile:** 576px - 767px
-- **Small Mobile:** Below 576px
+1. **Reset styles** - Remove browser defaults
+2. **Header styling** - Big background, navigation, hero text
+3. **About section** - Content boxes, profile image styling
+4. **Features section** - Cards, table styling
+5. **Contact section** - Form styling, background overlay
+6. **Responsive stuff** - Makes it work on phones
 
-## JavaScript Functionality
+## How I Made It Work on Mobile
 
-### Core Features
-- **Smooth Scrolling:** Navigation link scroll behavior
-- **Form Validation:** Client-side form validation and error handling
-- **Responsive Menu:** Bootstrap navbar toggle functionality
-- **Interactive Elements:** Button hover effects and transitions
+I used Bootstrap classes like:
+- `col-md-6` for two columns on tablets
+- `col-lg-4` for three columns on computers  
+- `d-none d-md-block` to hide things on phones
+
+Plus some CSS media queries for smaller screens:
+
+```css
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.5rem;  /* Smaller on phones */
+    }
+}
+```
+
+## Images I Used
+
+Currently using links to images on the internet:
+- Header background: SpaceX Eva Suit image
+- Contact background: Same image with darker overlay  
+- Profile image: SpaceX Mechazilla robot
+
+The `images/` folder is there if someone wants to download the pictures and use local files instead.
+
+## What I'd Do Differently Next Time
+
+- Maybe split CSS into multiple files (it got pretty long)
+- Add more interactive animations
+- Better organize the JavaScript code
+- Test more on different phones
+- Maybe use a CSS framework like Tailwind
 
 ## Development Workflow
 
-### Local Development
-1. Clone repository to local machine
-2. Open index.html in browser or serve via local server
-3. Make changes to HTML, CSS, or JavaScript files
-4. Test changes across different browsers and devices
-5. Commit changes with descriptive messages
+When I was working on this:
+1. Edit HTML/CSS in VS Code
+2. Save files
+3. Refresh browser to see changes
+4. Test on phone by making browser window smaller
+5. Fix anything that looked broken
 
-### Version Control
-- Git repository with main branch
-- Feature branches for new development
-- Descriptive commit messages following conventional format
-- Pull request process for code review
+Pretty simple setup. No fancy build tools or anything.
 
-### Testing Strategy
-- **Cross-browser testing:** Chrome, Firefox, Safari, Edge
-- **Responsive testing:** Various screen sizes and devices
-- **Performance testing:** Page load times and optimization
-- **Accessibility testing:** Screen reader compatibility and keyboard navigation
+---
 
-## Deployment Options
-
-### Static Hosting
-- GitHub Pages (free, integrated with repository)
-- Netlify (free tier with continuous deployment)
-- Vercel (frontend-focused deployment platform)
-- Traditional web hosting (Apache/Nginx servers)
-
-### CDN Considerations
-- Bootstrap loaded via CDN for reliability
-- Images can be converted to local for better control
-- External dependencies minimize bundle size
+*Hope this helps explain how I put things together for my CBC assignment!*
+*Scott Dee - CBC College Web Development Student*

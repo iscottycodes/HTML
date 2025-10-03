@@ -1,33 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Basic meta tags for browser compatibility -->
+    <!-- Set up basic page info -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Page title -->
-    <title>SpaceX Inspired Website - Student Project</title>
+    <title>Scott Dee - CBC College HTML Project</title>
     
-    <!-- Bootstrap CSS CDN for responsive layout -->
+    <!-- Bootstrap CSS from CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    
-    <!-- Custom CSS file -->
+    <!-- My custom CSS file -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Header section with navigation -->
+    <!-- Top header with background image -->
     <header class="main-header">
-        <!-- Navigation bar -->
+        <!-- Navigation menu -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
             <div class="container">
-                <!-- Brand name -->
-                <a class="navbar-brand" href="#home">SpaceX Demo</a>
+                <!-- Website name -->
+                <a class="navbar-brand" href="#home">Scott Dee - CBC College</a>
                 
-                <!-- Mobile menu button -->
+                <!-- Mobile menu button (hamburger) -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 
-                <!-- Navigation menu -->
+                <!-- Menu links -->
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
@@ -52,20 +50,20 @@
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-8 text-center">
-                        <h1 class="hero-title">Welcome to SpaceX Demo</h1>
-                        <p class="hero-subtitle">Exploring space technology and innovation</p>
-                        <a href="#about" class="btn btn-primary btn-lg">Learn More</a>
+                        <h1 class="hero-title">CBC College Assignment</h1>
+                        <p class="hero-subtitle">HTML/CSS Project by Scott Dee</p>
+                        <a href="#about" class="btn btn-primary btn-lg">Check It Out</a>
                     </div>
                 </div>
             </div>
         </div>
     </header>
 
-    <!-- About Us Section -->
+    <!-- About section -->
     <section id="about" class="py-5">
         <div class="container">
             <div class="row">
-                <!-- About content -->
+                <!-- Left side - text content -->
                 <div class="col-lg-6 mb-4">
                     <div class="about-content">
                         <h2 class="section-title">About Us</h2>
@@ -83,13 +81,13 @@
                     </div>
                 </div>
                 
-                <!-- Profile image -->
+                <!-- Right side - profile image -->
                 <div class="col-lg-6">
                     <div class="image-section text-center">
                         <img src="https://shop.spacex.com/cdn/shop/files/Mechazilla_wall_decal_250x.png" 
-                             alt="SpaceX Mechazilla Profile Image" 
+                             alt="SpaceX Mechazilla Robot" 
                              class="profile-img">
-                        <p class="img-caption mt-3">SpaceX Mechazilla Profile</p>
+                        <p class="img-caption mt-3">Cool SpaceX Robot Picture</p>
                     </div>
                 </div>
             </div>
@@ -232,10 +230,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <p>&copy; 2024 SpaceX Demo - Student Project. All rights reserved.</p>
+                    <p>&copy; 2024 Scott Dee - CBC College</p>
                 </div>
                 <div class="col-md-6 text-md-end">
-                    <p>Built with HTML, CSS & Bootstrap</p>
+                    <p>CBC College Assignment</p>
                 </div>
             </div>
         </div>
@@ -244,9 +242,9 @@
     <!-- Bootstrap JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     
-    <!-- Custom JavaScript for smooth scrolling -->
+    <!-- My JavaScript code -->
     <script>
-        // Smooth scrolling effect for navigation links
+        // Makes menu links scroll smoothly instead of jumping
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -261,14 +259,14 @@
             });
         });
         
-        // Simple form validation
+        // Checks if contact form is filled out correctly
         document.querySelector('.contact-form').addEventListener('submit', function(e) {
             const firstName = document.getElementById('firstName').value;
             const lastName = document.getElementById('lastName').value;
             const email = document.getElementById('email').value;
             
             if (!firstName || !lastName || !email) {
-                alert('Please fill in all required fields!');
+                alert('Please fill in all the required fields!');
                 e.preventDefault();
             }
         });
